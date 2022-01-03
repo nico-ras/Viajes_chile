@@ -16,3 +16,19 @@ nav img {
 footer {
     height: 3em;
 }
+
+.descDiv {
+    position: relative; 
+
+}
+
+.card {
+    height: 25em;
+}
+
+.card img {
+    height: 10em;
+}
+
+
+
