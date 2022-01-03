@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viajes Chile</title>
+
+    <!--Css de bootstrap 4.6.1-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+
+    <!--Font awersome-->
     <script src="https://kit.fontawesome.com/a07f283584.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+
+    <!--Estilos propios-->
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
@@ -35,13 +43,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
+          
+          
           <a class="nav-link" href="#">Inicio</a>
-          <a class="nav-link" href="#">Quienes Somos</a>
-          <a class="nav-link">Destacados</a>
-          <a class="nav-link">Contacto</a>
+          <a class="nav-link" href="#about">Quienes Somos</a>
+          <a class="nav-link" href="#destacados">Destacados</a>
+          <a class="nav-link" href="#contact">Contacto</a>
         </div>
       </div>
     </nav>
@@ -96,13 +103,13 @@
       </div>
     </header>
 
-    <section class="container text-center pt-5 pb-5 d-none d-lg-block">
+    <section id="about" class="container text-center pt-5 pb-5 d-none d-lg-block">
       <h2>Quienes somos?</h2>
       <hr class="bg-primary">
       <div class="row">
         <div class="descDiv col-4">
-          <div class="container bg-primary">
-            <span style="font-size: 2em; color: white;"><i class="fas fa-plane"></i></span>
+          <div class="flyDiv container bg-primary">
+            <span style="font-size: 2em; color: white;" type="button" data-toggle="modal" data-target="#exampleModal1"><i class="fas fa-plane"></i></span>
           </div>
           <p class="text-left">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
@@ -134,14 +141,14 @@
           </p>
 
           <div class="container bg-primary">
-            <span style="font-size: 2em; color: white;"><i class="fas fa-mountain"></i></span>
+            <span style="font-size: 2em; color: white;" type="button" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-mountain"></i></span>
           </div>
 
         </div>
         <div class="descDiv col-4">
 
           <div class="container bg-primary">
-            <span style="font-size: 2em; color: white;">
+            <span style="font-size: 2em; color: white;" type="button" data-toggle="modal" data-target="#exampleModal3">
               <i class="fas fa-map-marked-alt"></i>
             </span>
           </div>
@@ -162,7 +169,72 @@
       </div>
     </section>
 
-    <section class="container text-center pt-5 pb-5 ">
+    <!-- Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tickets de vuelo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sequi veritatis labore, vel obcaecati temporibus ut quidem expedita ea explicabo aspernatur sit suscipit ipsum, qui, fugit veniam nostrum mollitia unde!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Reservar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Deporte aventura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque illum vero nisi fugiat accusamus doloremque est beatae tempore. Officiis ratione libero sapiente cumque quam magni suscipit a, expedita cum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Reservar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">City tour</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis impedit laudantium distinctio vero sed culpa, aspernatur ipsum nulla unde deserunt fugit iusto atque quas minus repudiandae magnam ducimus expedita.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Reservar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section id="destacados" class="container text-center pt-5 pb-5 ">
       <h3>Destacados</h3>
       <hr class="bg-primary">
       <div class="container">
@@ -225,7 +297,7 @@
     </div> 
     </section>
 
-    <section class="container text-center pt-5">
+    <section id="contact" class="container text-center pt-5">
       <h4>Contacto</h4>
       <hr class="bg-primary">
       <div data-tf-widget="UY2jh6A5" data-tf-iframe-props="title=Contacto Viajes Chile" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
@@ -239,21 +311,25 @@
         </div>
         
         <div class="socialmedDiv col-12 col-lg-6 pt-2 text-center bg-primary">
-          <i class="fab fa-github-square fa-2x"></i>
-          <i class="fab fa-linkedin fa-2x pl-2"></i>
-          <i class="fab fa-twitter-square fa-2x pl-2"></i>
-          <i class="fab fa-facebook-square fa-2x pl-2"></i>
+          <i class="fab fa-github-square fa-2x"  data-toggle="tooltip"
+          data-placement="top" title="GitHub"></i>
+          <i class="fab fa-linkedin fa-2x pl-2"  data-toggle="tooltip"
+          data-placement="top" title="Linkedin"></i>
+          <i class="fab fa-twitter-square fa-2x pl-2"  data-toggle="tooltip"
+          data-placement="top" title="Twitter"></i>
+          <i class="fab fa-facebook-square fa-2x pl-2"  data-toggle="tooltip"
+          data-placement="top" title="Facebook"></i>
         </div>
       </div>
     </footer>
 
     
+<!--jquery 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+<!--bootstrap 4.6.1 y popper 1.16.1-->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -264,5 +340,8 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
+
+<!--Archivos js locales-->    
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

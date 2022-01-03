@@ -1,14 +1,16 @@
-
+/* Fuente a toda la pagina*/
 body {
     background-color: black;
     font-family: 'Open Sans', sans-serif;
 }
 
+/*tamano de imagen de navbar*/
 nav img {
     height: 2em;
     width: auto;
 }
 
+/*Transparencia y preponderancia de navbar*/
 .navbar {
     z-index: 999;
     background-color: transparent !important;
@@ -24,11 +26,15 @@ footer {
 
 }
 
+/*Borde de cards*/
+
 .card {
     height: 25em;
     border: lightblue solid;
     border-width: 1px;
 }
+
+/*Colores y fuentes*/
 
 .card img {
     height: 10em;
