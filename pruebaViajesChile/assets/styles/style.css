@@ -1,6 +1,18 @@
-
+body {
+    background-color: black;
+}
 
 nav img {
     height: 2em;
     width: auto;
+}
+
+.navbar {
+    z-index: 999;
+    background-color: transparent !important;
+    position: absolute;
+}
+
+footer {
+    height: 3em;
 }
