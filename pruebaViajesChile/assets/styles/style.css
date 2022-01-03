@@ -1,5 +1,7 @@
+
 body {
     background-color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav img {
@@ -14,7 +16,7 @@ nav img {
 }
 
 footer {
-    height: 3em;
+    height: auto;
 }
 
 .descDiv {
@@ -24,11 +26,29 @@ footer {
 
 .card {
     height: 25em;
+    border: lightblue solid;
+    border-width: 1px;
 }
 
 .card img {
     height: 10em;
 }
 
+.navbar a {
+    color: white;
+} 
+
+h2, h3, h4, h5, p {
+    color: white;
+}
+
+.socialmedDiv i {
+    color: white;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 400;
+}
 
 
