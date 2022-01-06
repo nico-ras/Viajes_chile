@@ -14,7 +14,7 @@ nav img {
 .navbar {
     z-index: 999;
     background-color: transparent !important;
-    position: absolute;
+    position: fixed;
 }
 
 footer {
